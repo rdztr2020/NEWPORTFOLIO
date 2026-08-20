@@ -15,20 +15,23 @@ function Projects() {
         <ProjectCard 
         src={nerd} 
         // link="https://github.com/rdztr2020/Portfolio-website/"
-        link="https://sleeonline.netlify.app"
+        link="https://sleepf.netlify.app"
         h3="The Nerd"
         p="Portfolio Page"
         
         />
+
+        {/*
         <ProjectCard 
         src={forsale} 
         // link="https://mern-course-jta1.onrender.com/"
         link="https://github.com/rdztr2020/NERDSTORE/"
         h3="Nerd Store"
         p="Mongo Database"
-        
-        
         />
+        */}
+
+
         <ProjectCard 
         src={login} 
         link='https://mern-auth-isuq.vercel.app/'

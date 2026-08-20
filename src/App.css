@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 60x;
+    
 }
 h1, h2, h3, p{
     color: var(--text-color);

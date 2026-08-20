@@ -15,7 +15,7 @@ import { useTheme } from '../../common/ThemeContext';
 function Hero() {
     const {theme, toggleTheme} = useTheme();
 
-    const themeIcon = theme === 'light' ? sun: moon;
+    const themeIcon = theme === 'light' ? moon:sun;
     const twitterIcon = theme === 'light' ? twitterLight: twitterDark;
     const githubIcon = theme === 'light' ? githubLight: githubDark;
     const LinkedinIcon = theme === 'light' ? linkedinLight: linkedinDark;
@@ -23,16 +23,18 @@ function Hero() {
     
     <section id='Hero' className={styles.container}>
         <div className={styles.colorModeContainer}>
-        <img className={styles.hero} 
-           src={heroImg} 
-           alt="Profile Pic of Me" 
-           /> 
-           <img 
+          <img 
            className={styles.colorMode}
            src={themeIcon} 
            alt="Color mode icon"
            onClick={toggleTheme} 
            />
+        <img className={styles.hero} 
+           src={heroImg} 
+           alt="Profile Pic of Me" 
+           /> 
+           
+           
         </div>
         <div className={styles.info}>
             <h1>THE
