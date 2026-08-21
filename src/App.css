@@ -8,6 +8,7 @@
     --text-color:#222;
     --form-text-color:#555;
     --footer-text-color:#888;
+    font-weight: bolder;
 }
 
 
@@ -39,6 +40,7 @@ h1, h2, h3, p{
     color: var(--text-color);
     margin:0;
     padding:0;
+    font-weight: bolder;
 }
 
 h2,h3,p{
