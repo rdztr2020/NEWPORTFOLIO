@@ -5,15 +5,14 @@
     align-items: center;
     gap: 20px;
     text-align: center;
-    height:100vh;
-    min-height: 500px;
+    min-height:100vh;
     font-weight: bolder;
   
     .hero {
       
       max-width: 200px;
       border-radius: 500px;
-      height: fit-content;
+      
 
       
     }
