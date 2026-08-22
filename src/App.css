@@ -33,7 +33,7 @@ body {
 #root {
     display: flex;
     flex-direction: column;
-    gap: 60x;
+    gap: 60px;
     
 }
 h1, h2, h3, p{
