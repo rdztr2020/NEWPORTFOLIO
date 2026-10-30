@@ -21,14 +21,17 @@ function Hero() {
     const LinkedinIcon = theme === 'light' ? linkedinLight: linkedinDark;
   return (
     
-    <section id='Hero' className={styles.container}>
+    <section id='hero' className={styles.container}>
         <div className={styles.colorModeContainer}>
-          <img 
-           className={styles.colorMode}
-           src={themeIcon} 
-           alt="Color mode icon"
-           onClick={toggleTheme} 
-           />
+          <button
+            type="button"
+            className={styles.colorModeButton}
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
+            title={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
+          >
+            <img className={styles.colorMode} src={themeIcon} alt="" />
+          </button>
         <img className={styles.hero} 
            src={heroImg} 
            alt="Profile Pic of Me" 
@@ -43,13 +46,13 @@ function Hero() {
             </h1>
             <h2>Making Magic</h2>
             <span>
-                <a href="https://twitter.com/" target="_blank">
+                <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                 <img src={twitterIcon} alt="Twitter Icon" />
                 </a>
-                <a href="https://github.com/" target="_blank">
+                <a href="https://github.com/" target="_blank" rel="noreferrer">
                 <img src={githubIcon} alt="Github Icon" />
                 </a>
-                <a href="https://linkedin.com/" target="_blank">
+                <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
                 <img src={LinkedinIcon} alt="Linkedin Icon" />
                 </a>
             </span>

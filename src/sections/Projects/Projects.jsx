@@ -4,13 +4,12 @@ import ProjectCard from '../../common/ProjectCard';
 
 import gordos from '../../Assets/gordologo.jpg'
 import nerd from '../../Assets/nerd.png'
-import forsale from '../../Assets/For-Sale-1200x800.jpg'
 import login from './signin.png'
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
-    <h1 className='sectionTitle'>Projects</h1>
+    <h2 className='sectionTitle'>Projects</h2>
     <div className={styles.projectsContainer}>
         <ProjectCard 
         src={nerd} 

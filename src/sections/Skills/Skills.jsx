@@ -13,8 +13,8 @@ function Skills() {
 
   return (
     <section id='skills' className={styles.container}>
-        <h1 className='sectionTitle'>Skills</h1>
-        <div className={styles.SkillList}>
+        <h2 className='sectionTitle'>Skills</h2>
+        <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="HTML"/>
         <SkillList src={checkMarkIcon} skill="CSS"/>
         <SkillList src={checkMarkIcon} skill="JavaScript"/>
@@ -22,14 +22,14 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Bootstrap"/>
         </div>
         <hr />
-        <div className={styles.SkillList}>
+        <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="React"/>
         <SkillList src={checkMarkIcon} skill="Angular"/>
         <SkillList src={checkMarkIcon} skill="Vue"/>
         <SkillList src={checkMarkIcon} skill="Tailwind"/>
         </div>
         <hr />
-        <div className={styles.SkillList}>
+        <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="Jest"/>
         <SkillList src={checkMarkIcon} skill="Node"/>
         <SkillList src={checkMarkIcon} skill="Redux"/>

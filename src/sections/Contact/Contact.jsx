@@ -102,7 +102,7 @@ function Contact() {
   };
 
   return (
-    <div className={styles.container}>
+    <section id="contact" className={styles.container}>
       {feedback.message && (
         <div
           role="status"
@@ -113,35 +113,45 @@ function Contact() {
         </div>
       )}
       <form ref={form} onSubmit={sendEmail} action="" className={styles.form}>
-        <h1 className={styles.title}>Contact Us</h1>
+        <h2 className={styles.title}>Let's talk</h2>
+        <p className={styles.description}>Have a project in mind? Send a note and let's make something great.</p>
         <input
           type="text"
           name="user_name"
-          placeholder="Enter fullname"
+          placeholder="Full name"
+          aria-label="Full name"
+          minLength={MIN_NAME_LENGTH}
           className={styles.field}
           required
         />
         <input
           type="email"
           name="user_email"
-          placeholder="Enter email"
+          placeholder="Email address"
+          aria-label="Email address"
           className={styles.field}
           required
         />
         <input
           type="text"
           name="subject"
-          placeholder="Enter Subject"
+          placeholder="Subject"
+          aria-label="Subject"
+          minLength={MIN_SUBJECT_LENGTH}
+          maxLength={MAX_SUBJECT_LENGTH}
           className={styles.field}
           required
         />
         <textarea
-          type="text"
           name="message"
           cols={40}
           rows={7}
-          placeholder="Leave a message"
+          placeholder="Tell me a little about your project..."
+          aria-label="Message"
+          minLength={MIN_MESSAGE_LENGTH}
+          maxLength={MAX_MESSAGE_LENGTH}
           className={styles.textarea}
+          required
         />
         <input
           type="text"
@@ -154,7 +164,7 @@ function Contact() {
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
       </form>
-    </div>
+    </section>
   );
 }
 

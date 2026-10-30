@@ -4,12 +4,13 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section id='footer' className={styles.container}>
+    <footer id='footer' className={styles.container}>
       <p>
-        &copy; {currentYear} SLEE <br />
-        All rights reserved
+        <span>&copy; {currentYear} SLEE</span>
+        <span>Designed and built with care.</span>
       </p>
-    </section>
+      <a href="#hero">Back to top ↑</a>
+    </footer>
   );
 }
 

@@ -1,5 +1,3 @@
-import checkMarkIcon from '../Assets/checkmark-dark.svg'
-
 function SkillList({src, skill}) {
   return (
     <span>
