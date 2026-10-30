@@ -128,7 +128,7 @@ p {
   position: absolute;
   bottom: -12px;
   left: 50%;
-  width: 42px;
+  width: 160px;
   height: 3px;
   border-radius: 999px;
   background: var(--btn-color);
