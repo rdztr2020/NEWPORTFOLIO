@@ -2,7 +2,7 @@ import styles from './ProjectsStyles.module.css';
 
 import ProjectCard from '../../common/ProjectCard';
 
-import gordos from '../../Assets/gordologo.jpg'
+import gordos from '../../Assets/GOMI-enhanced.png';
 import nerd from '../../Assets/nerd.png'
 import login from './signin.png'
 

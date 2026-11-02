@@ -8,8 +8,9 @@ function Footer() {
       <p>
         <span>&copy; {currentYear} SLEE</span>
         <span>Designed and built with care.</span>
+        <a href="#hero">Back to top ↑</a>
       </p>
-      <a href="#hero">Back to top ↑</a>
+      
     </footer>
   );
 }
